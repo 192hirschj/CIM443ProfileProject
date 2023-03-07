@@ -1,0 +1,219 @@
+/* universal styling: */
+
+body {
+        background: #EBCFC4;
+        color: black;
+        margin: 64px;
+        font-family: "Questrial";
+        transition: background 1s, color 1s, margin 1s;
+}
+
+ul {
+        display: flex;
+        gap: 30px;
+}
+
+.hey {
+        font-family: "Imbue"; /*Abril Fatface*/
+        font-size: 140px;
+        grid-area: hey;
+        margin: 0;
+}
+
+.Jackie-in-nav {
+      font-family: "Questrial";
+      grid-area: Jackie-in-nav;
+      font-size: 40px;   
+}
+
+.nav-bar {
+        grid-area: nav-bar;
+}
+
+.nav-button {
+        font-size: 40px;
+        background: #D3C4BE;
+        list-style-type: none;
+        display: inline;
+        padding: 20px 40px; /* height, width */
+        border-radius: 45px;
+}
+
+.nav-button-op {
+        font-size: 40px;
+        background: #EE99CC; /*#fc034e*/
+        list-style-type: none;
+        display: inline;
+        padding: 20px 40px; /* height, width */
+        border-radius: 45px;
+}
+
+.nav-button-link {
+       font-family: "Questrial";
+       text-decoration: none;
+       color: black; 
+}
+
+.nav-w-logo {
+        
+        display: grid;
+        grid-template-areas: 
+        "Jackie-in-nav    nav-bar    nav-bar    nav-bar";
+        grid-area: nav-w-logo;
+}
+
+/* home page styling: */
+
+.home-bio {
+        font-family: "Questrial";
+        font-size: 25px;
+        heigt: 400px;
+        width: 550px;
+        grid-area: home-bio;
+        line-height: 45px;
+}
+
+.Jackie-photo {
+        grid-area: Jackie-photo;
+        border-radius: 45px;
+}
+
+.page-noNav {
+        display: grid;
+        margin: auto;
+        grid-column-gap: 120px;
+        grid-template-areas: 
+        "hey          hey           .               ."
+        "home-bio     home-bio   Jackie-photo   Jackie-photo"
+        "home-bio     home-bio   Jackie-photo   Jackie-photo";
+        
+        grid-area: "page-noNav";
+        /*"home-bio   home-bio   Jackie-photo   Jackie-photo"*/
+}
+
+.home-page {
+        display: grid;
+        grid-template-areas: 
+        "nav-w-logo"
+        "page-noNav";
+}
+
+/* about me styling: */
+
+.header-about {
+        font-family: "Imbue"; 
+        font-size: 140px;
+        grid-area: about;
+        margin: 0;
+}
+
+.about-bio {
+        font-family: "Questrial";
+        font-size: 25px;
+        line-height: 45px;
+        grid-area: bio;
+        /*heigt: 400px;
+        width: 550px;*/
+}
+
+.Jackie-photo-seb {
+        border-radius: 45px;
+        grid-area: seb-photo;
+}
+
+.about-page-noNav {
+        display: grid;
+        margin: auto;
+        grid-row-gap: 15px;
+        grid-template-areas: 
+        "about   seb-photo"
+        "bio     bio";
+        grid-area: about-page-noNav;
+}
+
+.about-page {
+        display: grid;
+        margin: auto;
+        grid-row-gap: 30px;
+        grid-template-areas: 
+        "nav-w-logo"
+        "about-page-noNav";
+}
+
+/* experience styling: */
+
+.header-experience {
+        font-family: "Imbue"; 
+        font-size: 140px;
+        margin: 0;
+}
+
+.experience-page-noNav {
+
+}
+
+.resume-section {
+        margin-block-start: 40px;
+}
+
+.firstLineTitle {
+        font-family: "Questrial";
+        font-size: 30px;
+}
+
+.secondLineTitle {
+        font-family: "Questrial";
+        font-size: 35px;
+        color: #C27FBC;
+        margin-block-start: 20px;
+        margin-block-end: 20px;
+}
+
+.experience-bullets{
+        display: inline-grid;
+        gap: 30px;  
+        list-style-type: square;
+        margin-block-end: 20px;
+}
+
+.bullet-points{
+      font-family: "Questrial";
+      font-size: 25px;  
+}
+
+/* connect styling: */
+
+.connect-page-noNav {
+
+}
+
+.social-box-EM {
+        grid-area: EM;
+        text-align: center;
+}
+
+.social-box-LI {
+        grid-area: LI;
+        text-align: center;
+
+}
+
+.social-box-GH {
+        grid-area: GH;
+        text-align: center;
+}
+
+.social-link {
+        font-family: "Questrial";
+        text-decoration: none;
+        color: black; 
+        font-size: 30px;
+}
+
+.social-layout {
+        display: grid;
+        margin-block-start: 45px;
+        grid-template-areas: 
+        "EM LI GH";
+
+}
